@@ -15,7 +15,7 @@ public class DatabaseUtil {
 
     public static Connection getConnection() throws SQLException {
         try {
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");//class from jar
         }catch (ClassNotFoundException e){
             System.err.println("SQL Server JDBC Driver not found.");
             e.printStackTrace();
